@@ -1,0 +1,14 @@
+//Check if all characters are unique in a string
+
+var isUnique = function(s){
+  for(var i=0;i<s.length;i++){
+    var ch = s.charAt(i);
+    if(s.indexOf(ch)!=s.lastIndexOf(ch)){
+      return false;
+    }
+  }
+  return true;
+};
+
+console.log(isUnique("abac")); // Output = false
+
