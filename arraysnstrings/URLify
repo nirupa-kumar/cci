@@ -1,0 +1,6 @@
+//Method to replace all spaces in a string with '%20'
+var URLify = function(s){
+  return s.trim().replace(/\s/g,'%20');
+}
+
+console.log(URLify("ms alice"));//Output ms%20alice
