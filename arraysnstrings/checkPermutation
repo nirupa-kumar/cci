@@ -1,0 +1,17 @@
+//Check if 2 strings are permutations of each other
+
+var checkPermutation = function(s1,s2){
+  var result = '';
+  for(var i=0;i<s1.length;i++){
+    result = result ^ s1.charCodeAt(i);
+  }
+  for(var j=0;j<s2.length;j++){
+    result = result ^ s2.charCodeAt(j);
+  }
+  if(result == ''){
+    return true;
+  }
+  return false;
+}
+
+console.log(checkPermutation("abcd","abcd"));//Output = true
